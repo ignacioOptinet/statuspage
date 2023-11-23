@@ -1,14 +1,17 @@
 <html>
   <head>
-    <title>Status Page</title>
+    <title>Optinet Services - Status Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
     <div class="pageContainer">
       <div class="headline">
-        <img src="https://optinetuk.com/wp-content/themes/optinet/img/Optinet-Logo.png" alt="Logo" width="200px" />
+        <img
+          src="https://optinetuk.com/wp-content/themes/optinet/img/Optinet-Logo.png"
+          alt="Logo" width="200px" />
         <!-- <span> System Status </span> -->
       </div>
       <div id="reports" class="reportContainer"></div>
@@ -23,13 +26,11 @@
         <div
           id="statusSquareTemplate"
           class="statusSquare $color"
-          data-status="$color"
-        ></div>
+          data-status="$color"></div>
         <div id="statusLineTemplate" class="statusLine"></div>
         <div
           id="statusStreamContainerTemplate"
-          class="statusStreamContainer"
-        ></div>
+          class="statusStreamContainer"></div>
         <div id="statusContainerTemplate" class="statusContainer">
           <div class="statusHeader">
             <h6 class="statusTitle">$title&nbsp;</h6>
@@ -43,10 +44,9 @@
       </div>
     </div>
     <footer>
-      Forked from
-      <a href="https://github.com/statsig-io/statuspage/"
-        >Statsig's Open-Source Status Page</a
-      >.
+      <!-- Forked from
+      <a href="https://github.com/statsig-io/statuspage/">Statsig's Open-Source
+        Status Page</a>. -->
     </footer>
   </body>
   <script>
