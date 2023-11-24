@@ -170,6 +170,11 @@ footer a {
   font-weight: 500;
 }
 
+.sectionGroup {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 .statusTitle {
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -178,6 +183,7 @@ footer a {
 
 .statusHeader {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   margin-bottom: 2px;
