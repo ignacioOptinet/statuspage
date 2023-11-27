@@ -1,6 +1,7 @@
 const maxDays = 30;
 
 async function genReportLog(container, key, url, group) {
+  // alert(key);
   const response = await fetch("logs/" + key + "_report.log");
   let statusLines = "";
   if (response.ok) {
