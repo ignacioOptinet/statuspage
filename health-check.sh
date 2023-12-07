@@ -10,15 +10,17 @@ fi
 
 KEYSARRAY=()
 URLSARRAY=()
+GROUPSARRAY=()
 
 urlsConfig="./urls.cfg"
 echo "Reading $urlsConfig"
 while read -r line
 do
   echo "  $line"
-  IFS='=' read -ra TOKENS <<< "$line"
+  IFS='~' read -ra TOKENS <<< "$line"
   KEYSARRAY+=(${TOKENS[0]})
   URLSARRAY+=(${TOKENS[1]})
+  GROUPSARRAY+=(${TOKENS[2]})
 done < "$urlsConfig"
 
 echo "***********************"
@@ -30,7 +32,8 @@ for (( index=0; index < ${#KEYSARRAY[@]}; index++))
 do
   key="${KEYSARRAY[index]}"
   url="${URLSARRAY[index]}"
-  echo "  $key=$url"
+  group="${GROUPSARRAY[index]}"
+  echo "  $key~$url~$group"
 
   for i in 1 2 3 4; 
   do
